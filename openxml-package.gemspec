@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest-reporters"
   spec.add_development_dependency "minitest-reporters-turn_reporter"
   spec.add_development_dependency "pry"
-  spec.add_development_dependency "rr"
+  spec.add_development_dependency "rr", "~> 3.0.8"
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "shoulda-context"
 
