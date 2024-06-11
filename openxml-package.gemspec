@@ -14,6 +14,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/openxml/openxml-package"
   spec.license       = "MIT"
 
+  spec.required_ruby_version = ">= 2.4.0"
+
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
@@ -29,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest-reporters"
   spec.add_development_dependency "minitest-reporters-turn_reporter"
   spec.add_development_dependency "pry"
-  spec.add_development_dependency "rr"
+  spec.add_development_dependency "rr", "~> 3.0.8"
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "shoulda-context"
 
